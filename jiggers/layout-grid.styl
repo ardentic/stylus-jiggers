@@ -1,0 +1,32 @@
+
+//
+// Create simple grids
+//
+// Grids based on number of items and gutter, optional to add top margin 
+// ----------------------------------------------------------------------------------
+
+layout-grid(columns = 4, gutter = 1.5em, margin-top = false) {
+  
+  column-width = 100%/columns;
+  gutter-width = (gutter * (columns - 1)) /columns;
+  
+  width: "calc(%s - %s)" % (column-width gutter-width);
+
+  float: left; 
+  margin-left: gutter;
+
+  &:nth-child({columns}n+1) {
+    margin-left: 0;
+    clear: both;
+  }
+
+  if margin-top {
+    margin-top: margin-top;
+
+    for num in (1..columns) {
+      &:nth-child({num}) {
+        margin-top: 0;
+      }
+    }
+  }
+}

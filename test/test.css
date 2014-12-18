@@ -1,0 +1,59 @@
+.container:after,
+.container:before {
+  content: '';
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.some-width {
+  width: 33.333%;
+}
+.some-other-width {
+  width: 16.666%;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@font-face {
+  font-family: 'droid-sans-regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/droid-sans-regular.eot");
+  src: url("/assets/fonts/droid-sans-regular.eot?#iefix") format('embedded-opentype'), url("/assets/fonts/droid-sans-regular.woff") format('woff'), url("/assets/fonts/droid-sans-regular.ttf") format('truetype'), url("/assets/fonts/droid-sans-regular.svg#svgFontName") format('svg');
+}
+@font-face {
+  font-family: 'droid-sans-bold';
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/droid-sans-bold.eot");
+  src: url("/fonts/droid-sans-bold.eot?#iefix") format('embedded-opentype'), url("/fonts/droid-sans-bold.woff") format('woff'), url("/fonts/droid-sans-bold.ttf") format('truetype'), url("/fonts/droid-sans-bold.svg#svgFontName") format('svg');
+}
+.timing-functions {
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

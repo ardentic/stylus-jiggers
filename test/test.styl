@@ -1,0 +1,71 @@
+
+@import '../mixins';
+
+reset();
+
+.container {
+  clearfix();
+}
+
+.main-content {
+  main-content();
+}
+
+.main-grid {
+  layout-grid();
+}
+
+.column {
+  layout-column();
+}
+
+.button {
+  button();
+}
+
+.some-width {
+  width: percentage(1/3);
+}
+
+.some-other-width {
+  width: percentage(1/6);
+}
+
+.truncate {
+  text-truncate();
+}
+
+.font-face {
+  font-face('droid-sans-regular', 'assets/fonts');
+}
+
+.font-face-bold {
+  font-face('droid-sans-bold', 'fonts', bold, italic);
+}
+
+.timing-functions {
+  transition: all 0.3s ease-in-quad;
+  transition: all 0.3s ease-in-cubic;
+  transition: all 0.3s ease-in-quart;
+  transition: all 0.3s ease-in-quint;
+  transition: all 0.3s ease-in-sine;
+  transition: all 0.3s ease-in-expo;
+  transition: all 0.3s ease-in-circ;
+  transition: all 0.3s ease-in-back;
+  transition: all 0.3s ease-out-quad;
+  transition: all 0.3s ease-out-cubic;
+  transition: all 0.3s ease-out-quart;
+  transition: all 0.3s ease-out-quint;
+  transition: all 0.3s ease-out-sine;
+  transition: all 0.3s ease-out-expo;
+  transition: all 0.3s ease-out-circ;
+  transition: all 0.3s ease-out-back;
+  transition: all 0.3s ease-in-out-quad;
+  transition: all 0.3s ease-in-out-cubic;
+  transition: all 0.3s ease-in-out-quart;
+  transition: all 0.3s ease-in-out-quint;
+  transition: all 0.3s ease-in-out-sine;
+  transition: all 0.3s ease-in-out-expo;
+  transition: all 0.3s ease-in-out-circ;
+  transition: all 0.3s ease-in-out-back;
+}

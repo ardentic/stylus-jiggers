@@ -1,0 +1,58 @@
+
+//
+// Reset elements
+//
+// Create a clean slate by resetting common elements
+// ----------------------------------------------------------------------------------
+
+reset(font-size = 16px, line-height = 1.5, sans-family = sans-serif) {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: sans-family;
+    font-size: font-size;
+    line-height: line-height;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+  b, strong, em, i {
+    font-style: normal;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+
+//
+// Create column layouts
+//
+// Columns based on col span, gutter and total num of columns
+// ----------------------------------------------------------------------------------
+
+layout-column(column-span = 3, gutter = 1.5em, total-columns = 12) {
+  
+  columns = total-columns/column-span;
+  column-width = (100%/total-columns) * column-span;
+  gutter-width = (gutter * (columns - 1)) /columns;
+  
+  width: "calc(%s - %s)" % (column-width gutter-width);
+
+  float: left; 
+  margin-left: gutter;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+}

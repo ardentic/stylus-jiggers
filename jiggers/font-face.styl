@@ -1,0 +1,20 @@
+
+//
+// Font-face
+//
+// Super simple font-face declaration.
+//
+// ----------------------------------------------------------------------------------
+
+font-face(name, folder, weight = normal, style = normal) {
+  @font-face {
+    font-family: name;
+    font-weight: weight;
+    font-style: style;
+    src: s('url("/%s/%s.eot")', unquote(folder), unquote(name));
+    src: s('url("/%s/%s.eot?#iefix")', unquote(folder), unquote(name)) format('embedded-opentype'),
+         s('url("/%s/%s.woff")', unquote(folder), unquote(name)) format('woff'),
+         s('url("/%s/%s.ttf")', unquote(folder), unquote(name)) format('truetype'),
+         s('url("/%s/%s.svg#svgFontName")', unquote(folder), unquote(name)) format('svg');
+  }
+}
