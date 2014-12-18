@@ -12,7 +12,7 @@
   "author": "Ardentic",
 
   "ignore": [
-    "**/*."
+    "**/*.",
     "test"
   ],
 
@@ -25,6 +25,6 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/ardentic/stylus-mq.git"
+    "url": "https://github.com/ardentic/stylus-jiggers.git"
   }
 }
