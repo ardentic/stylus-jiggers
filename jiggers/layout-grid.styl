@@ -2,17 +2,21 @@
 //
 // Create simple grids
 //
-// Grids based on number of items and gutter, optional to add top margin 
+// Grids based on number of items and gutter, optional to add top margin
 // ----------------------------------------------------------------------------------
 
-layout-grid(columns = 4, gutter = 1.5em, margin-top = false) {
-  
-  column-width = 100%/columns;
-  gutter-width = (gutter * (columns - 1)) /columns;
-  
-  width: "calc(%s - %s)" % (column-width gutter-width);
+layout-grid(columns = 4, gutter = 2em, margin-top = false) {
+  column-width = 100% / columns;
+  gutter-width = (gutter * (columns - 1)) / columns;
+  gutter-width-rounded = round(gutter-width, 2);
 
-  float: left; 
+  if (gutter-width != gutter-width-rounded) {
+    warn("Rounding errors in layout-grid, look for selector: " + selector());
+  }
+
+  width: "calc(%s - %s)" % (column-width gutter-width-rounded);
+
+  float: left;
   margin-left: gutter;
 
   &:nth-child({columns}n+1) {
