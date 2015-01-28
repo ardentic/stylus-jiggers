@@ -1,6 +1,7 @@
 {
   "name": "stylus-jiggers",
   "description": "Jiggers is a Stylus mixin library with a bunch of helpers.",
+  "version": "0.1.2",
   "keywords": [
     "stylus",
     "mixins",
