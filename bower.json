@@ -1,31 +1,22 @@
 {
   "name": "stylus-jiggers",
+  "version": "1.0.0",
   "description": "Jiggers is a Stylus mixin library with a bunch of helpers.",
-  "version": "0.1.3",
+  "main": "jiggers.styl",
   "keywords": [
     "stylus",
     "mixins",
     "jiggers",
     "helpers"
   ],
-
-  "main": "jiggers.styl",
-  "author": "Ardentic",
-
   "ignore": [
     "**/*.",
     "test"
   ],
-
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-
   "repository": {
     "type": "git",
     "url": "https://github.com/ardentic/stylus-jiggers.git"
-  }
+  },
+  "author": "Ardentic",
+  "license": "MIT"
 }
