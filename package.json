@@ -1,6 +1,6 @@
 {
-  "name": "@ardentic/stylus-jiggers",
-  "version": "1.0.0",
+  "name": "stylus-jiggers",
+  "version": "2.0.0",
   "description": "Jiggers is a Stylus mixin library with a bunch of helpers.",
   "main": "jiggers.styl",
   "directories": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ardentic/stylus-jiggers.git"
+    "url": "git+https://github.com/marcuslilja/stylus-jiggers.git"
   },
   "keywords": [
     "stylus",
@@ -23,10 +23,10 @@
     "jiggers",
     "helpers"
   ],
-  "author": "Ardentic",
+  "author": "Marcus Lilja",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ardentic/stylus-jiggers/issues"
+    "url": "https://github.com/marcuslilja/stylus-jiggers/issues"
   },
-  "homepage": "https://github.com/ardentic/stylus-jiggers#readme"
+  "homepage": "https://github.com/marcuslilja/stylus-jiggers#readme"
 }
