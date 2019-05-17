@@ -1,0 +1,21 @@
+
+//
+// Vertical center
+//
+// ----------------------------------------------------------------------------------
+center( height = 100% ) {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: height;
+    width: 0;
+    vertical-align: middle;
+  }
+}
+
+center-content() {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
